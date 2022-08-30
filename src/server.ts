@@ -41,7 +41,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
 
 
-  app.get( "/test1",async ( req: Request, res: Response ) => {
+  app.get( "/test",async ( req: Request, res: Response ) => {
    const URL = req.query.URL.toString();
    if(!URL){
     res.status(400).send("mission non finie")
